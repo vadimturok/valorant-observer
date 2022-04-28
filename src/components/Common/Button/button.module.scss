@@ -1,0 +1,47 @@
+.buttonRed{
+  padding: 15px 30px 15px 30px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #8c0606 50%, #b91919 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-in-out;
+
+  &:hover {
+    background-position: left;
+  }
+}
+.buttonBlue{
+  padding: 15px 30px 15px 30px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #0f1923 50%, #162433 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-in-out;
+
+  &:hover {
+    background-position: left;
+  }
+}
+
+.buttonSimple{
+  padding: 4px 7px 4px 7px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover{
+    background: rgba(128, 128, 128, 0.59);
+  }
+}
