@@ -1,0 +1,21 @@
+.agents{
+  position: relative;
+
+  .container{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .agentsImg{
+    width: 100%;
+    height: auto;
+  }
+  .agentsTitle{
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    top: 55px;
+    font-weight: 900;
+    left: 6%;
+  }
+}

@@ -14,7 +14,7 @@ const Layout: FC<LayoutProps> = ({children}) => {
             <div className={styles.main}>
                 {children}
             </div>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 };

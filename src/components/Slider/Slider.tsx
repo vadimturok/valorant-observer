@@ -25,8 +25,8 @@ const Slider: FC<SliderProps> = ({maps}) => {
 
     return (
         <div className={styles.slider}>
-            <img className={styles.right} src={prev} onClick={prevSlide}/>
-            <img className={styles.left} src={next} onClick={nextSlide}/>
+            <img className={styles.right} src={prev} onClick={prevSlide} alt={'right-arrow'}/>
+            <img className={styles.left} src={next} onClick={nextSlide} alt={'left-arrow'}/>
             {maps.map((map, index) => (
                 <div className={styles.mapImgWrapper} key={map.name}>
                     {index === current && (
