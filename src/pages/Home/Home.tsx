@@ -1,30 +1,24 @@
 import React, {FC} from 'react';
 import styles from './home.module.scss'
-import agents from '../../assets/images/Sem-Título-1.png'
 import gameplay from '../../assets/images/gameplay_1.jpg'
 import reyna from '../../assets/images/reyna.gif'
 import Slider from "../../components/Slider/Slider";
-import {maps} from "../../data/maps";
 import Button from "../../components/Common/Button/Button";
+import {useAppSelector} from "../../hooks";
 
 const Home: FC = () => {
+    const {maps, isLoading} = useAppSelector(state => state.mapReducer)
     return (
         <>
-            <div className={styles.header}>
-                <div className={styles.container}>
-                    <div className={styles.info}>
-                        <div className={styles.title}>
-                            <h1>VALORANT</h1>
-                            <p className={styles.text}>
-                                All info about valorant patches, news, agents, abilities maps and other staff you can find here
-                            </p>
-                        </div>
-                        <div className={styles.agentsHeader}>
-                            <img width={400} src={agents} alt=""/>
-                        </div>
-                    </div>
-
+            <div className={styles.background}>
+                <div className={styles.headerTitle}>
+                    <h1>Welcome to Valorant Observer</h1>
+                    <h6>All info about valorant patches, news, agents, abilities maps and other staff you can find here</h6>
                 </div>
+                <div className={`${styles.wave} ${styles.wave1}`}/>
+                <div className={`${styles.wave} ${styles.wave2}`}/>
+                <div className={`${styles.wave} ${styles.wave3}`}/>
+                <div className={`${styles.wave} ${styles.wave4}`}/>
             </div>
             <div className={styles.description}>
                 <div className={styles.container}>
@@ -63,7 +57,7 @@ const Home: FC = () => {
                 <div className={styles.container}>
                     <h1 data-aos={'fade-right'} className={styles.sliderTitle}>Wide pool of maps</h1>
                     <div>
-                        <Slider maps={maps}/>
+                        {isLoading ? null : maps.length > 0 ? <Slider maps={maps}/> : <div>No maps</div>}
                     </div>
                 </div>
             </div>

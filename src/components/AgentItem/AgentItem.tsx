@@ -10,14 +10,14 @@ interface AgentItemProps{
 const AgentItem: FC<AgentItemProps> = ({agent}) => {
   return (
     <div className={styles.agent}>
-      <div
-        data-aos="flip-left"
-        data-aos-duration={"1000"}
-        className={styles.agentItem}
-      >
+      <div className={styles.agentItem}>
         <div className={styles.text}>
           <p>{agent.displayName}</p>
         </div>
+        {agent.background && <img
+            className={styles.background}
+            src={agent.background}
+            alt={agent.displayName}/>}
         <img
           className={styles.agentImg}
           src={agent.fullPortraitV2}
@@ -29,7 +29,7 @@ const AgentItem: FC<AgentItemProps> = ({agent}) => {
           </div>
           <div className={styles.abilityList}>
             {agent.abilities.map(ability => ability.slot !== 'Passive' && (
-                <div className={styles.abilityItem}>
+                <div key={ability.displayName} className={styles.abilityItem}>
                   <span>{ability.displayName}</span>
                   <img
                       width={30}

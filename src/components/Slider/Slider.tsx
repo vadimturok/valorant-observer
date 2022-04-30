@@ -1,42 +1,31 @@
 import React, {FC, useState} from 'react';
 import styles from './slider.module.scss'
-import next from '../../assets/images/right-arrow.png'
-import prev from '../../assets/images/left-arrow.png'
-import {MapImage} from "../../data/maps";
+import {IMap} from "../../types";
+import {Carousel} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface SliderProps{
-    maps: MapImage[]
+    maps: IMap[]
 }
 
 const Slider: FC<SliderProps> = ({maps}) => {
-    const [current, setCurrent] = useState(0)
-    const [side, setSide] = useState<'left' | 'right'>('right')
-    const length = maps.length
+    const [index, setIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1)
-        setSide('right')
-    }
-
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1)
-        setSide('left')
-    }
+    const handleSelect = (selectedIndex: any, e: any) => {
+        setIndex(selectedIndex);
+    };
 
     return (
         <div className={styles.slider}>
-            <img className={styles.right} src={prev} onClick={prevSlide} alt={'right-arrow'}/>
-            <img className={styles.left} src={next} onClick={nextSlide} alt={'left-arrow'}/>
-            {maps.map((map, index) => (
-                <div className={styles.mapImgWrapper} key={map.name}>
-                    {index === current && (
-                        <div data-aos={side === 'left' ? 'fade-right' : 'fade-left'}>
-                            <h1>{map.name}</h1>
-                            <img  className={styles.mapImg} src={map.image} alt="map"/>
-                        </div>
-                    )}
-                </div>
-            ))}
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+                {maps.map(map => (
+                    <Carousel.Item key={map.uuid}>
+                        <h1>{map.displayName}</h1>
+                        <img className={styles.mapImg} src={map.splash} alt={map.displayName}/>
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import styles from './navbar.module.scss'
 import {Link, useLocation} from "react-router-dom";
 
@@ -6,29 +6,29 @@ const Navbar: FC = () => {
     const location = useLocation()
     return (
         <div className={styles.wrapper}>
-            <ul className={styles.navbarList}>
+            <div className={styles.navbarList}>
                 <Link to={'/'} className={'link'}>
-                    <li className={`${styles.navbarItem} ${location.pathname === '/' && styles.active}`}>
+                    <div className={`${styles.navbarItem} ${location.pathname === '/' && styles.active}`}>
                         Home
-                    </li>
+                    </div>
                 </Link>
                 <Link to={'patches'} className={'link'}>
-                    <li className={`${styles.navbarItem} ${location.pathname === '/patches' && styles.active}`}>
+                    <div className={`${styles.navbarItem} ${location.pathname === '/patches' && styles.active}`}>
                         Patches
-                    </li>
+                    </div>
                 </Link>
                 <Link to={'agents'} className={'link'}>
-                    <li className={`${styles.navbarItem} ${location.pathname === '/agents' && styles.active}`}>
+                    <div className={`${styles.navbarItem} ${location.pathname === '/agents' && styles.active}`}>
                         Agents
-                    </li>
+                    </div>
                 </Link>
                 <Link to={'maps'} className={'link'}>
-                    <li className={`${styles.navbarItem} ${location.pathname === '/maps' && styles.active}`}>
+                    <div className={`${styles.navbarItem} ${location.pathname === '/maps' && styles.active}`}>
                         Maps
-                    </li>
+                    </div>
                 </Link>
 
-            </ul>
+            </div>
 
         </div>
     );

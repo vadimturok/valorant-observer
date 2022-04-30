@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import agentReducer from "./slices/AgentSlice";
+import agentReducer from "./slices/agents/AgentSlice";
+import mapReducer from './slices/maps/MapSlice'
 
 const rootReducer = combineReducers({
   agentReducer,
+  mapReducer
 });
 
 export const store = configureStore({

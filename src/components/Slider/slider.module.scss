@@ -1,48 +1,23 @@
 .slider{
- position: relative;
-  padding-bottom: 200px;
+  position: relative;
+  padding-bottom: 100px;
 
-  .left{
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    position: absolute;
-    transform: translate(0, -50%);
-    z-index: 10;
-    top: 40%;
-    right: 6%;
-    color: white;
+  .mapImg{
+    width: calc(100% - 21px);
+    height: auto;
+    vertical-align: middle;
+    padding: 10px;
+    border: 1px solid #cc1111;
   }
-  .right{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    position: absolute;
-    transform: translate(0, -50%);
-    z-index: 10;
-    top: 40%;
-    left: 6%;
-  }
-  .mapImgWrapper{
-    position: relative;
-    .mapImg{
-      width: calc(100% - 21px);
-      height: auto;
-      vertical-align: middle;
-      padding: 10px;
-      border: 1px solid #cc1111;
-      //opacity: 0.8;
-    }
 
-    h1{
-      position: absolute;
-      z-index: 10;
-      color: #EBEDEE;
-      top: 10%;
-      left: 7%;
-      font-size: 70px;
-      font-weight: 800;
-    }
+  h1{
+    position: absolute;
+    z-index: 10;
+    color: #EBEDEE;
+    top: 10%;
+    left: 7%;
+    font-size: 70px;
+    font-weight: 800;
   }
 }
 

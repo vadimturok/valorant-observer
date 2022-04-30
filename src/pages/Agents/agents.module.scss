@@ -1,9 +1,18 @@
 .agents{
   position: relative;
 
+  .background{
+    background: url('../../assets/images/all-agents.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
   .container{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+    border-left: 1px solid #0f1923;
+    border-right: 1px solid #0f1923;
   }
 
   .agentsImg{
@@ -13,7 +22,7 @@
   .agentsTitle{
     position: absolute;
     color: white;
-    font-size: 70px;
+    font-size: 60px;
     top: 55px;
     font-weight: 900;
     left: 6%;

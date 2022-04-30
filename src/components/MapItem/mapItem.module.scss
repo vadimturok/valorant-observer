@@ -1,0 +1,55 @@
+.mapItem{
+  position: relative;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0f1923;
+
+  }
+  .moreBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  .mapImg{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  &:hover{
+    transform: translateY(-15px);
+  }
+  &:hover .overlay{
+     opacity: 0.3;
+  }
+  &:hover .moreBtn{
+    opacity: 1;
+  }
+
+  .name{
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    background-color: #fa4454;
+    color: white;
+    padding: 7px 20px 7px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}

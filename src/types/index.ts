@@ -22,9 +22,19 @@ export interface IAgent {
   role: IRole;
   abilities: IAbility[];
   isPlayableCharacter: boolean;
+  background: string;
 }
 
-export interface ApiResponse{
-  data: IAgent[];
+export interface IMap{
+  uuid: string;
+  displayName: string;
+  coordinates: string;
+  displayIcon: string;
+  listViewIcon: string;
+  splash: string;
+}
+
+export interface ApiResponse<T>{
+  data: T[];
   status: number;
 }

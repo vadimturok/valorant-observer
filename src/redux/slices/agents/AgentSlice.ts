@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { IAgent } from "../../types";
+import { IAgent } from "../../../types";
 
 interface AgentState {
   agents: IAgent[];
