@@ -213,6 +213,7 @@
         }
         p{
           margin-top: 20px;
+          margin-bottom: 40px;
           width: 80%;
           font-size: 20px;
           color: gray;
@@ -257,14 +258,29 @@
     }
   }
 }
-.sliderTitle{
-  //float: right;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  font-size: 70px;
-  font-weight: 900;
-  background: linear-gradient(to right, #f53232 0%, #340404 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.sliderInfo{
+
+  .sliderTitle{
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: 900;
+    background: linear-gradient(to right, #f53232 0%, #340404 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  .mapText{
+    font-size: 20px;
+    color: gray;
+    width: 60%;
+    margin-top: 20px;
+  }
+  .mapsButton{
+
+  }
+}
+.slider{
+  margin-top: 20px;
 }
 

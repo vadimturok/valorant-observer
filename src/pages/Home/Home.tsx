@@ -22,12 +22,12 @@ const Home: FC = () => {
             </div>
             <div className={styles.description}>
                 <div className={styles.container}>
-                    <div className={styles.valorant}>
-                        <h1 data-aos-delay="300" data-aos={'fade-up'} data-aos-duration="1000">What is VALORANT?</h1>
-                        <p data-aos-delay="500" data-aos={'fade-right'} data-aos-duration="2000">
+                    <div data-aos-delay="500" data-aos="fade-left" data-aos-duration="2000" className={styles.valorant}>
+                        <h1>What is VALORANT?</h1>
+                        <p>
                             Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
                         </p>
-                        <div data-aos-delay="500" data-aos="fade-left" data-aos-duration="2000" className={styles.gameplayImg}>
+                        <div className={styles.gameplayImg}>
                             <img width={500} src={gameplay} alt=""/>
                         </div>
                     </div>
@@ -38,6 +38,7 @@ const Home: FC = () => {
                                 <p>
                                     Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
                                 </p>
+                                <Button background={'red'} text={'See agents'} type={'button'}/>
                             </div>
                             <div data-aos-delay="1000" data-aos="zoom-in" data-aos-duration="2000" className={styles.agentImg}>
                                 <img src={reyna} alt=""/>
@@ -55,8 +56,16 @@ const Home: FC = () => {
                     </div>
                 </div>
                 <div className={styles.container}>
-                    <h1 data-aos={'fade-right'} className={styles.sliderTitle}>Wide pool of maps</h1>
-                    <div>
+                    <div data-aos={'fade-right'} data-aos-duration={'2000'} data-aos-delay={'1000'} className={styles.sliderInfo}>
+                        <h1 className={styles.sliderTitle}>Wide pool of maps</h1>
+                        <p className={styles.mapText}>
+                            Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
+                        </p>
+                        <div className={styles.mapsButton}>
+                            <Button type={'button'} background={'red'} text={'See maps'}/>
+                        </div>
+                    </div>
+                    <div className={styles.slider}>
                         {isLoading ? null : maps.length > 0 ? <Slider maps={maps}/> : <div>No maps</div>}
                     </div>
                 </div>
