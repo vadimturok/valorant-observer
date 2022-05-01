@@ -13,7 +13,7 @@ const Home: FC = () => {
             <div className={styles.background}>
                 <div className={styles.headerTitle}>
                     <h1>Welcome to Valorant Observer</h1>
-                    <h6>All info about valorant patches, news, agents, abilities maps and other staff you can find here</h6>
+                    <h6>All info about Valorant patches, news, agents, abilities, maps and other you can find here</h6>
                 </div>
                 <div className={`${styles.wave} ${styles.wave1}`}/>
                 <div className={`${styles.wave} ${styles.wave2}`}/>

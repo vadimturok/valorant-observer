@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./agentItem.module.scss";
 import Button from "../Common/Button/Button";
 import {IAgent} from "../../types";
+import {Link} from "react-router-dom";
 
 interface AgentItemProps{
   agent: IAgent
@@ -41,7 +42,10 @@ const AgentItem: FC<AgentItemProps> = ({agent}) => {
             ))}
           </div>
           <div className={styles.moreBtn}>
-            <Button text={"More 🡆"} type={"button"} background={"simple"} />
+            <Link to={`agents/${agent.uuid}`}>
+              <Button text={"More 🡆"} type={"button"} background={"simple"} />
+            </Link>
+
           </div>
         </div>
       </div>
