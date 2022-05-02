@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/valorant-observer/static/css/main.bc0cdbff.css",
+    "main.js": "/valorant-observer/static/js/main.85d9a939.js",
+    "static/media/all-agents.webp": "/valorant-observer/static/media/all-agents.840ba3da4c9e0744b291.webp",
+    "static/media/reyna.gif": "/valorant-observer/static/media/reyna.f41690d2c97c0d83791c.gif",
+    "static/media/sova.webp": "/valorant-observer/static/media/sova.9fbccdc5102e945ab419.webp",
+    "static/media/gameplay_1.jpg": "/valorant-observer/static/media/gameplay_1.adae5ee2f3ef12f3ce07.jpg",
+    "index.html": "/valorant-observer/index.html",
+    "main.bc0cdbff.css.map": "/valorant-observer/static/css/main.bc0cdbff.css.map",
+    "main.85d9a939.js.map": "/valorant-observer/static/js/main.85d9a939.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc0cdbff.css",
+    "static/js/main.85d9a939.js"
+  ]
+}
