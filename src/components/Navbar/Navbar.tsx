@@ -27,7 +27,6 @@ const Navbar: FC = () => {
                         Maps
                     </div>
                 </Link>
-
             </div>
 
         </div>

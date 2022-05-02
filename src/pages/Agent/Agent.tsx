@@ -8,7 +8,6 @@ const Agent: FC = () => {
     const {agents} = useAppSelector(state => state.agentReducer)
     const agent = agents.filter(agent => agent.uuid === agentId)[0]
 
-
     if(agent) {
         return (
             <div className={styles.agent}>
@@ -49,13 +48,11 @@ const Agent: FC = () => {
                                     <p>
                                         {ability.description}
                                     </p>
-
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
-
             </div>
         );
     }else{

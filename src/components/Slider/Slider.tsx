@@ -25,7 +25,6 @@ const Slider: FC<SliderProps> = ({maps}) => {
                     </Carousel.Item>
                 ))}
             </Carousel>
-
         </div>
     );
 };

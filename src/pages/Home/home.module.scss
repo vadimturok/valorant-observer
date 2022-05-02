@@ -93,63 +93,6 @@
   }
 }
 
-.header{
-  font-size: 30px;
-  box-sizing: border-box;
-  height: 550px;
-  background: linear-gradient(300deg,#0f1923,#fa4454,#0f1923);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  .info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: 1140px) {
-      padding-top: 50px;
-      flex-direction: column;
-      text-align: center;
-    }
-    .title{
-      h1{
-        font-size: 80px;
-        font-weight: 900;
-      }
-      color: white;
-      font-size: 40px;
-
-      .text{
-        font-size: 15px;
-        width: 500px;
-      }
-    }
-
-    .agentsHeader{
-      margin-top: 100px;
-      @media (max-width: 1140px) {
-        margin-top: 50px;
-      }
-      img{
-        @media (max-width: 1140px) {
-          width: 300px;
-        }
-      }
-    }
-  }
-}
-
 .description{
   margin-top: 100px;
 
@@ -222,10 +165,6 @@
           }
         }
       }
-
-      .agentImg{
-
-      }
     }
   }
 
@@ -275,9 +214,6 @@
     color: gray;
     width: 60%;
     margin-top: 20px;
-  }
-  .mapsButton{
-
   }
 }
 .slider{
