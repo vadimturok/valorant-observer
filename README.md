@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# 📝Valorant Observer - valornat game overview
+> Live demo
+>  [_here_](https://vadimturok.github.io/valorant-observer/#/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>API fro this project you canf find [_here_](https://valorant-api.com/).
 
-## Available Scripts
+## Table of Contents
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
+- React - version 18.1.0
+- AOS - version 2.3.4
+- Redux Toolkit - version 1.8.1
+- Axios - version 0.27.2
+- TypeScript - version 4.6.3
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Features
+- Animated app header
+- Animated text and pictures
+- Flip cards
+- CSS modules
+- Cool design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Screenshots
+![Example screenshot](./src/assets/images/demo_img1.png)
+![Example screenshot](./src/assets/images/demo_img2.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup
+To run React application: open 'client' folder
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run following commands:
 
-### `npm run eject`
+```
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Status
+Project is: _completed_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contact
+Contact with me via e-mail: turokvadim2510@gmail.com or on Twitter: [Vadim Turok](https://twitter.com/stefanio228)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
