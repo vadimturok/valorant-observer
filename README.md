@@ -2,7 +2,7 @@
 > Live demo
 >  [_here_](https://vadimturok.github.io/valorant-observer/#/).
 
->API fro this project you canf find [_here_](https://valorant-api.com/).
+>API fro this project you canf find [_here_](https://dash.valorant-api.com/).
 
 ## Table of Contents
 * [Technologies Used](#technologies-used)
