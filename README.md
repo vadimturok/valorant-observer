@@ -1,4 +1,4 @@
-# 📝Valorant Observer - valornat game overview
+# 📝Valorant Observer
 > Live demo
 >  [_here_](https://vadimturok.github.io/valorant-observer/#/).
 
